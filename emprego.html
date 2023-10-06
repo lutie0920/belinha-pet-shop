@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Belinha</title>
+    <link rel="shortcut icon" type="image/png" href="./imagens/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;800&display=swap" rel="stylesheet">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- top navbar-->
+    <div class="top-navbar">
+        <p>Seja Bem Vindo Na Nossa Loja!!</p>
+        <div class="icons">
+            <a href="login.html"><img src="./imagens/login.png" alt="" width="18px">Login</a>
+            <a href="register.html"><img src="./imagens/cadastrar.png" alt="" width="18px">Cadastrar</a>
+        </div>
+    </div>
+    <!-- top navbar-->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"><img class="logo-img" src="./imagens/logo.png" alt="logo"><span id="span1">Belinha Pet Shop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./imagens/menu.png" alt="" width="30px"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fale Conosco
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #703a44;">
+                  <li><a class="dropdown-item" href="contato.html">Formulário de Contato</a></li>
+                  <li><a class="dropdown-item" href="mapa.html">Localização</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="emprego.html">Emprego</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produtos.html">Produtos</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="search">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    <!-- formulário de emprego -->
+    <h1 class="emprego-h1">Venha trabalhar conosco!</h1>
+      <div class="emprego-container p-5">
+        <form>
+            <div class="mb-3">
+                <label for="first name" class="form-label">Primeiro Nome</label>
+                <input type="text" class="form-control formcontrol-sm" id="firstname" placeholder="Primeiro nome">
+            </div>
+            <div class="mb-3">
+                <label for="last name" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control formcontrol-sm" id="lastname" placeholder="Sobrenome">
+            </div>
+            <div class="mb-3">
+                <label for="genero">Gênero</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Femino</option>
+                  <option>Masculino</option>
+                  <option>Outros</option>
+                  <option>Não quero Responder</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control formcontrol-sm" id="email" placeholder="XXX@XXX.com">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Telefone</label>
+                <input type="number" class="form-control formcontrol-sm" id="tel" placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <div class="mb-3">
+                <label for="curriculo" class="form-label">Anexar currículo
+                </label>
+                <input type="file" class="form-control formcontrol-sm" id="anexo">
+            </div>
+            <div class="mb-3 emprego-btn">
+            <button type="submit" class="emprego-enviar">Enviar</button>
+            </div>
+        </form>
+      </div>
+    <!-- formulário de emprego -->
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Pet Shop Belinha</h4>
+                <strong>Telefone(WhatsApp):</strong>(43)-91122-3344<br>
+                <strong>Email:</strong>belinha@gmail.com<br>
+                <strong>Endereço:</strong>Endereço: Rua Pet nº124, Vila Bela - Londrina - PR
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Acesse os links</h4>
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+                <li><a href="emprego.html">Emprego</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Redes Sociais</h4>
+              <div class="social-links mt-3">
+                <a href="https://www.instagram.com/lucianakamon/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/lucianatie/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lutie0920" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+          <div class="copyright">
+            &copy; Copyright <stron><span>Pet Shop Belinha</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by Luciana
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <a href="#" class="arrow"><i><img src="./images/arrow-up.png" alt=""></i></a>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
